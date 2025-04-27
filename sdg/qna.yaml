@@ -1,6 +1,6 @@
 version: 3
 document_outline: "Teach the model about Meta's LLaMA 4 release, models, and token capabilities."
-created_by: mkotelni
+created_by: michaelkotelnikov
 domain: llms
 seed_examples:
   - context: "Meta released LLaMA 4 in April 2025."
@@ -45,7 +45,7 @@ seed_examples:
         answer: "Maverick supports 1 million tokens, while Scout supports 10 million."
 
 document:
-  repo: "https://github.com/michaelkotelnikov/llama4-playground.git"
-  commit: "ecd5442"
+  repo: "https://github.com/michaelkotelnikov/ilab-raft.git"
+  commit: "2fc0830"
   patterns:
-    - "llama4-info.md"
+    - "sdg/llama4-info.md"
