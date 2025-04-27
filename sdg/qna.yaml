@@ -1,0 +1,51 @@
+version: 3
+document_outline: "Teach the model about Meta's LLaMA 4 release, models, and token capabilities."
+created_by: mkotelni
+domain: llms
+seed_examples:
+  - context: "Meta released LLaMA 4 in April 2025."
+    questions_and_answers:
+      - question: "When was LLaMA 4 released?"
+        answer: "LLaMA 4 was released by Meta on April 5, 2025."
+      - question: "Who developed LLaMA 4?"
+        answer: "LLaMA 4 was developed by Meta."
+      - question: "What month was LLaMA 4 launched?"
+        answer: "LLaMA 4 launched in April 2025."
+  - context: "LLaMA 4 is a family of large language models developed by Meta."
+    questions_and_answers:
+      - question: "What is LLaMA 4?"
+        answer: "LLaMA 4 is Meta’s latest multimodal large language model."
+      - question: "Who created LLaMA 4?"
+        answer: "Meta created LLaMA 4."
+      - question: "Is LLaMA 4 a language model?"
+        answer: "Yes, it is a large language model developed by Meta."
+  - context: "The LLaMA 4 family includes two models: Maverick and Scout."
+    questions_and_answers:
+      - question: "How many models are in the LLaMA 4 family?"
+        answer: "Two: Maverick and Scout."
+      - question: "What are the names of the models in LLaMA 4?"
+        answer: "Maverick and Scout."
+      - question: "Which models did Meta release as part of LLaMA 4?"
+        answer: "Meta released Maverick and Scout in LLaMA 4."
+  - context: "LLaMA 4 Scout supports very large context windows."
+    questions_and_answers:
+      - question: "How many tokens does LLaMA 4 Scout support?"
+        answer: "Up to 10 million tokens."
+      - question: "Which LLaMA 4 model supports a 10 million token window?"
+        answer: "Scout."
+      - question: "Is LLaMA 4 Scout optimized for long-context understanding?"
+        answer: "Yes, it supports up to 10 million tokens for long-document tasks."
+  - context: "Maverick supports up to 1 million tokens, while Scout supports up to 10 million."
+    questions_and_answers:
+      - question: "Which LLaMA 4 model supports fewer tokens?"
+        answer: "Maverick supports fewer tokens — up to 1 million."
+      - question: "What is the maximum token length supported by Scout?"
+        answer: "10 million tokens."
+      - question: "How does Maverick compare to Scout in token length?"
+        answer: "Maverick supports 1 million tokens, while Scout supports 10 million."
+
+document:
+  repo: "https://github.com/michaelkotelnikov/llama4-playground.git"
+  commit: "ecd5442"
+  patterns:
+    - "llama4-info.md"
